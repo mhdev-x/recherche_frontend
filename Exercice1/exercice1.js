@@ -14,3 +14,11 @@ function estAdmis(moyenne) {
     }
 }
 console.log(estAdmis(9.5));
+
+// 3. Écrire calculerPrixTTC(prixHT, tauxTVA = 0.18) qui retourne le prix TTC. Le taux par défaut est de 18 pour cent.
+function calculerPrixTTC(prixHT, tauxTVA = 0.18) {
+    let prixTTC = prixHT * ( 1 + tauxTVA );
+    return prixTTC;
+}
+console.log(calculerPrixTTC(10000));
+
