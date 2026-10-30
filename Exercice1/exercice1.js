@@ -22,3 +22,9 @@ function calculerPrixTTC(prixHT, tauxTVA = 0.18) {
 }
 console.log(calculerPrixTTC(10000));
 
+// 4. Écrire une fonction fléchée convertirEnMinutes(heures) qui retourne le nombre de minutes correspondant.
+const convertirEnMinutes = (heures) => {
+    let minutes = heures * 60;
+    return minutes;
+}
+console.log(convertirEnMinutes(2));
