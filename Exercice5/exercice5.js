@@ -44,3 +44,15 @@ function ajouterNote(etudiantL2, nouvelleNote) {
 const etudiantAvecNouvelleNote = ajouterNote(etudiantL2, 18);
 console.log(etudiantAvecNouvelleNote);
 
+// 4. Écrire creerResume(etudiant, ...options) qui retourne un résumé contenant l’identité, la moyenne et les options reçues dans un tableau.
+function creerResume(etudiantL2, ...options) {
+    const identite = extraireIdentite(etudiantL2);
+    const moyenne = calculerMoyenneNotes(etudiantL2.notes);
+    return {
+        ...identite,
+        moyenne,
+        options
+    };
+}
+const resumeEtudiant = creerResume(etudiantL2, "Option1", "Option2");
+console.log(resumeEtudiant);
