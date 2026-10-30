@@ -26,3 +26,12 @@ function creerFiche(nom, filiere, ...competences) {
     };
 }
 console.log(creerFiche("Axe", "IAGE", "JavaScript", "HTML", "CSS"));
+
+// 4. Expliquer pourquoi le paramètre rest doit être placé à la fin de la liste des paramètres.
+// Réponse : Le paramètre rest doit être placé à la fin de la liste des paramètres 
+// car il capture tous les arguments supplémentaires passés à la fonction. 
+// Si un autre paramètre était placé après le paramètre rest, 
+// il ne pourrait jamais recevoir d'arguments car tous les arguments supplémentaires seraient capturés par le paramètre rest. 
+// Autrement dit, le rest ramasse tout ce qui reste. Si tu le mets au début, 
+// il n'y aurait plus rien à ramasser pour les autres paramètres, 
+// et JavaScript ne saurait plus où placer les arguments suivants.
