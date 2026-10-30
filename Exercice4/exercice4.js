@@ -8,3 +8,11 @@ function additionner(...nombres) {
 }
 console.log(additionner(2, 3)); // 5
 console.log(additionner(1, 2, 3, 4, 5)); // 15
+
+// 2. Écrire afficherPremierEtAutres(premier, ...autres) qui affiche le premier argument séparément puis le tableau des autres arguments.
+function afficherPremierEtAutres(premier, ...autres) {
+    console.log("Le premier argument est : " , premier);
+    console.log("Les autres arguments sont : " , autres);
+
+}
+afficherPremierEtAutres("Bonjour", "Comment", "ça", "va", "????");
