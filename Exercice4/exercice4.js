@@ -16,3 +16,13 @@ function afficherPremierEtAutres(premier, ...autres) {
 
 }
 afficherPremierEtAutres("Bonjour", "Comment", "ça", "va", "????");
+
+// 3. Écrire creerFiche(nom, filiere, ...competences) qui retourne un objet contenant le nom, la filière et un tableau de compétences.
+function creerFiche(nom, filiere, ...competences) {
+    return {
+        nom: nom,
+        filiere: filiere,
+        competences: competences
+    };
+}
+console.log(creerFiche("Axe", "IAGE", "JavaScript", "HTML", "CSS"));
