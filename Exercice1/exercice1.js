@@ -28,3 +28,9 @@ const convertirEnMinutes = (heures) => {
     return minutes;
 }
 console.log(convertirEnMinutes(2));
+
+// 5. Tester chaque fonction avec au moins deux appels, dont un cas limite pertinent.
+console.log(calculerMoyenne(0, 0, 0));
+console.log(estAdmis(10));
+console.log(calculerPrixTTC(10000, 0.2));
+console.log(convertirEnMinutes(0)); 
