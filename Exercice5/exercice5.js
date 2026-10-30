@@ -33,3 +33,14 @@ function calculerMoyenneNotes(notes) {
     return somme / notes.length;
 }
 console.log(calculerMoyenneNotes(etudiantL2.notes));
+
+// 3. Écrire ajouterNote(etudiant, nouvelleNote) qui retourne un nouvel objet avec la nouvelle note ajoutée. Utiliser spread pour ne pas modifier l’objet et le tableau d’origine.
+function ajouterNote(etudiantL2, nouvelleNote) {
+    return {
+        ...etudiantL2,
+        notes: [...etudiantL2.notes, nouvelleNote]
+    };
+}
+const etudiantAvecNouvelleNote = ajouterNote(etudiantL2, 18);
+console.log(etudiantAvecNouvelleNote);
+
