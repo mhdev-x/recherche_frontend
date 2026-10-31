@@ -56,3 +56,38 @@ function creerResume(etudiantL2, ...options) {
 }
 const resumeEtudiant = creerResume(etudiantL2, "Option1", "Option2");
 console.log(resumeEtudiant);
+
+// QUESTIONS DE COMPREHENSION
+
+// 1. Quelle est la différence entre une fonction qui utilise return et une fonction qui utilise uniquement console.log() ?
+// Réponse : 
+// En gros, return sert à "donner" le résultat à l'extérieur de la fonction pour qu'on puisse le réutiliser 
+// (par exemple, le stocker dans une variable pour faire d'autres calculs avec). console.log(), c'est juste un outil 
+// d'affichage pour le développeur : ça écrit dans la console, mais ça ne renvoie rien d'utilisable (la fonction 
+// renvoie undefined si on ne met pas de return).
+
+// 2. Quelle est la différence entre le destructuring d'un objet et celui d'un tableau ?
+// Réponse : 
+// Pour un objet, on utilise les accolades {} et on extrait les données grâce au nom de la propriété 
+// (ex: nom, prenom). Pour un tableau, on utilise les crochets [] et on extrait les données selon leur position/ordre 
+// (le 1er, le 2ème...). On peut aussi renommer une propriété d'objet (ex: niveau: classe), ou sauter une position 
+// dans un tableau avec une virgule vide.
+
+// 3. Quelle différence faites-vous entre spread et rest ? Donnez un exemple de chaque.
+// Réponse : 
+// Bien qu'ils utilisent tous les deux les trois petits points (...), ils font exactement l'inverse :
+// - Le Spread sert à "déballer" ou étaler le contenu. Exemple : const copie = [...tableau];
+// - Le Rest sert à "ramasser" ou regrouper ce qui reste dans une seule variable. 
+// Exemple : function additionner(...nombres) (ça regroupe tous les arguments dans un tableau).
+
+// 4. Pourquoi est-il souvent utile de créer une copie avec spread avant de modifier un tableau ou un objet ?
+// Réponse : 
+// C'est pour respecter le principe d'immutabilité. En JavaScript, si on modifie directement un objet ou 
+// un tableau, on risque de créer des bugs ailleurs dans le code. En créant une copie avec le spread, on peut 
+// modifier la copie tranquillement sans toucher aux données d'origine. On garde ainsi nos données de départ intactes.
+
+// 5. Que se passe-t-il si deux objets fusionnés avec spread possèdent la même propriété ?
+// Réponse : 
+// C'est le dernier objet de la liste qui "gagne". Si on fait { ...objet1, ...objet2 } et que les deux 
+// ont une clé "nom", alors c'est la valeur de objet2 qui sera gardée, parce que c'est lui qui a été lu en dernier 
+// et qui vient écraser la valeur de objet1.
